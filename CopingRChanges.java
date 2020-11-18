@@ -1,9 +1,9 @@
 import java.util.*;
 public class CopingRChanges{
-	public static List<Apple> FilterGreenApples(List<Apple> inventory){
+	public static List<Apple> FilterGreenApples(List<Apple> inventory,String color){
 		List<Apple> result = new ArrayList<>();
 		for(Apple apple : inventory){
-			if("green".equals(apple.getColor())){
+			if(apple.getColor().equals(color)){
 				result.add(apple);
 			}
 

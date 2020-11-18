@@ -12,7 +12,7 @@ class Test {
 		inventory.add(apple3);
 		inventory.add(apple4);
 		
-		List<Apple> greenAppleInventory = CopingRChanges.FilterGreenApples(inventory);
+		List<Apple> greenAppleInventory = CopingRChanges.FilterGreenApples(inventory,"red");
 
 		for(Apple apple : greenAppleInventory){
 			System.out.println(apple.getColor());
